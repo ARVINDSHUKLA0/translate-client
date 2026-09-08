@@ -442,7 +442,7 @@ export default function Home() {
 
         <div className="row g-3">
           {useCases.map((c) => (
-            <div className="col-lg-6 col-md-12 col-sm-12 col-12" key={c.id}>
+            <div className="col-lg-6 col-6 col-sm-6 col-12" key={c.id}>
               <div className={`${styles.case} ${c.tint}`}>
                 <small>{c.tag}</small>
                 <div className="mt-4">
