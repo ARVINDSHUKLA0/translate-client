@@ -234,9 +234,9 @@ export default function Home() {
   ];
 
   const steps = [
-    { id: "1", title: "Upload your document", desc: "Drop in your file or paste your text. We support every major document format." },
-    { id: "2", title: "We match a translator", desc: "Your project is matched to a native-speaking professional with the right subject expertise." },
-    { id: "3", title: "Receive & download", desc: "Get your finished translation, reviewed and ready, within your estimated delivery window." },
+    { id: "1", title: "Tell us what you need", desc: "Choose your source and target languages, service type and delivery speed. Upload your files securely." },
+    { id: "2", title: "We match the right expert", desc: "Your content goes to a qualified language professional with the right subject-matter and language expertise." },
+    { id: "3", title: "Review, approve, done", desc: "Receive your finished translation, request revisions if needed, and download your final files." },
   ];
 
   const plans = [
@@ -419,8 +419,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* ================= SOLUTIONS / USE CASES ================= */}
+ 
 
       <section className={`${styles.section} container-custom`} id="solutions">
         <div className="row align-items-end mb-4 g-3">
@@ -460,53 +459,56 @@ export default function Home() {
           ))}
         </div>
       </section>
-
-      {/* ================= WORKFLOW / PROCESS ================= */}
-      {/* <section className={`${styles.section} container-custom`} id="process">
+ 
+      <section className={`${styles.section} container-custom`} id="process">
         <div className="mb-4">
           <span className={styles.eyebrow}>How it works</span>
-          <h2 className={styles.sectionTitle}>Three steps to a finished translation.</h2>
+       <div className="row">
+           <div className="col-lg-6 col-md-6 col-sm-6 col-12">
+                 <h2 className={styles.sectionTitle}>Simple enough to start in a minute.</h2>
+           </div>
+           <div className="col-lg-6 col-md-6 col-sm-6 col-12">
+                 <p className={`${styles.sectionDesc} ms-lg-auto`}>A streamlined experience from your first upload to the final approved file.</p>
+           </div>
+       </div>
         </div>
         <div className="row g-3">
           {steps.map((s, i) => (
-            <div className="col-lg-4 col-12" key={s.id}>
+            <div className="col-lg-4 col-md-4 col-sm-6 col-12" key={s.id}>
               <div className={styles.step}>
-                <div className={styles.stepNo}>{i + 1}</div>
+                <div className={styles.stepNo}>0{i + 1}</div>
                 <h3>{s.title}</h3>
                 <p>{s.desc}</p>
               </div>
             </div>
           ))}
         </div>
-      </section> */}
-
-      {/* ================= SECURITY ================= */}
-      {/* <section className="container-custom" id="security">
+      </section>
+ 
+      <section className="container-custom" id="security">
         <div className={styles.security}>
-          <div className="row align-items-center g-4">
-            <div className="col-lg-6">
-              <span className={styles.eyebrow} style={{ color: "var(--color-accent-lime)" }}>Security</span>
-              <h2 className={styles.sectionTitle}>Your documents stay protected, end to end.</h2>
+          <div className="row align-items-end g-4">
+            <div className="col-lg-6 col-md-12 col-sm-12 col-12">
+              <span className={styles.eyebrow} style={{ color: "var(--color-accent-lime)" }}>Security & quality</span>
+             <h3 style={{color : "white"}} className={styles.sectionTitle}>Global work deserves a secure home.</h3>
               <p>
-                Every file is handled with enterprise-grade security — from
-                upload to delivery — so sensitive documents remain
-                confidential throughout the translation process.
+              From personal certificates to confidential corporate files, your content should be handled with care at every step of the process.
               </p>
               <div className="row g-2 mt-3">
-                <div className="col-6"><div className={styles.check}><b>✓</b>Encrypted uploads</div></div>
-                <div className="col-6"><div className={styles.check}><b>✓</b>Confidential review</div></div>
-                <div className="col-6"><div className={styles.check}><b>✓</b>Access controls</div></div>
-                <div className="col-6"><div className={styles.check}><b>✓</b>Automatic deletion</div></div>
+                <div className="col-6"><div className={styles.check}><b>✓</b>Secure file handling</div></div>
+                <div className="col-6"><div className={styles.check}><b>✓</b>Professional experts</div></div>
+                <div className="col-6"><div className={styles.check}><b>✓</b>Quality review</div></div>
+                <div className="col-6"><div className={styles.check}><b>✓</b>Confidential workflow</div></div>
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-6 col-md-12 col-sm-12 col-12">
               <div className={styles.securityVisual}>
                 <div className={styles.secureTop}>
-                  <span>Document status</span>
-                  <span>🔒 Encrypted</span>
+                  <span>VERBA SECURE WORKSPACE</span>
+                  <span>● Protected</span>
                 </div>
                 <div className={styles.shield}>
-                  <div className={styles.shieldMark}>🛡</div>
+                  <div className={styles.shieldMark}>✓</div>
                 </div>
                 <div className="mt-3">
                   <div className={styles.sline}></div>
@@ -517,7 +519,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* ================= STATS + TESTIMONIAL ================= */}
       {/* <section className={`${styles.section} container-custom`}>
