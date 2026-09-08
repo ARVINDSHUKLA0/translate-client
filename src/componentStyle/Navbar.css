@@ -17,7 +17,7 @@
  
 .navbar-inner {
     position: relative;
-    width: 92%;
+    width: 88%;
     max-width: none;
     min-height: 88px;
     margin: 0 auto;
@@ -316,6 +316,9 @@
 
     .navbar-bars {
         display: flex;
+    }
+    .navbar-inner {
+        width: 97%;
     }
 }
 

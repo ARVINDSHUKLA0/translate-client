@@ -1,46 +1,271 @@
+// import Navbar from "@/components/Navbar";
+// import styles from "./page.module.css";
+// import Link from "next/link";
+
+// export default function Home() {
+//   const Services = [
+//     {
+//       "id": "1",
+//       "title": "01 / OFFICIAL",
+//       "name": "Certified translation",
+//       "desc": "Official translations for immigration, education, legal, government and other high-stakes submissions.",
+//       "icon": "h"
+//     },
+//     {
+//       "id": "  2",
+//       "title": "02 / EVERYDAY",
+//       "name": "Document translation",
+//       "desc": "Professional translation for contracts, reports, certificates, presentations, websites and business documents.",
+//       "icon": "h"
+//     },
+//     {
+//       "id": "3",
+//       "title": "03 / GLOBAL",
+//       "name": "Localization",
+//       "desc": "Adapt language, tone and cultural details so your product and content feel native in every market.",
+//       "icon": "h"
+//     },
+//     {
+//       "id": "4",
+//       "title": "04 / SCALE",
+//       "name": "Business solutions",
+//       "desc": "Team accounts, centralized billing, recurring workflows and tailored language programs for organizations.",
+//       "icon": "h"
+//     },
+//   ]
+//   return (
+//     <div className={styles.page}>
+//       <Navbar />
+
+//       <section className="container-custom  ">
+//         <section className={`${styles.hero} row align-items-center`}>
+//           <div className="col-lg-5 col-md-12 col-sm-12 col-12">
+//             <span className={`${styles.badge} d-inline-flex align-items-center gap-2`}>
+//               <span className={styles.dot}></span>
+//               Global language partner · 65+ languages
+//             </span>
+//             <h1 className={`${styles.title} my-lg-5 my-3`}>
+//               Make your
+//               <br />
+//               business
+//               <br />
+//               <span className={`${styles.customGradientColor}`}>
+//                 understood.
+//               </span>
+//             </h1>
+
+//             <p className={`fs-22 text-secondary`}>
+//               Professional translation and localization for companies,
+//               documents, products and people — combining native-language
+//               expertise with a beautifully simple digital experience.
+//             </p>
+
+//             <div className="d-flex flex-wrap gap-2 mt-4">
+
+//               <Link
+//                 href="#"
+//                 className={`${styles.darkBtn} btn rounded-pill fw-bold`}
+//               >
+//                 Start a translation →
+//               </Link>
+
+//               <Link
+//                 href="#"
+//                 className="btn bg-white border rounded-pill fw-bold px-4 py-3"
+//               >
+//                 Explore solutions
+//               </Link>
+
+//             </div>
+
+//             <div className={`${styles.features} d-flex flex-wrap gap-3 mt-3 fs-13`}>
+//               <span>✓ Native-speaking professionals</span>
+//               <span>✓ Transparent pricing</span>
+//               <span>✓ Fast delivery</span>
+//             </div>
+
+//           </div>
+
+//           <div className=" col-lg-7 col-md-12 col-sm-12 col-12">
+//             <div className={styles.translation}>
+//               <div className={styles.circle}></div>
+//               <div className={styles.card}>
+//                 <h2 className="fs-4 fw-bold mb-4">
+//                   Create a translation
+//                 </h2>
+//                 <div className="row align-items-center g-3">
+//                   <div className="col">
+//                     <div className={styles.language}>
+//                       <strong className="me-2">US</strong>
+//                       English
+//                     </div>
+//                   </div>
+//                   <div className="col-auto">
+//                     <div className={styles.swap}>
+//                       ↔
+//                     </div>
+//                   </div>
+//                   <div className="col">
+//                     <div className={styles.language}>
+//                       <strong className="me-2">DE</strong>
+//                       German
+//                     </div>
+//                   </div>
+//                 </div>
+//                 <div className={styles.upload}>
+//                   <div className={styles.uploadIcon}>
+//                     ↑
+//                   </div>
+//                   <strong>
+//                     Drop your document here
+//                   </strong>
+//                   <small>
+//                     PDF, DOCX, PPTX, XLSX and more · Secure upload
+//                   </small>
+//                 </div>
+
+//                 <div className="border-top mt-3 pt-3 d-flex justify-content-between">
+//                   <div>
+//                     <small className="d-block text-secondary">
+//                       Estimated delivery
+//                     </small>
+//                     <strong className="fs-4">
+//                       24–48 hrs
+//                     </strong>
+//                   </div>
+
+//                   <div className="text-end">
+//                     <small className="d-block text-secondary">
+//                       From
+//                     </small>
+//                     <strong className="fs-4">
+//                       $24.95
+//                     </strong>
+//                   </div>
+//                 </div>
+//               </div>
+
+//               <span className={styles.languages}>
+//                 65+ languages
+//               </span>
+//               <span className={styles.available}>
+//                 • Available now
+//               </span>
+//               <span className={styles.secure}>
+//                 🔒 Secure workflow
+//               </span>
+//               <span className={styles.rating}>
+//                 ★ 4.9 / 5 customer rating
+//               </span>
+//             </div>
+//           </div>
+//         </section>
+//       </section>
+
+//       <section className={`${styles.trusted} border-top border-bottom my-lg-5 my-md-4 my-3`}>
+//         <div className="row align-items-center g-0">
+//           <div className="col-12 col-md-auto">
+//             <span className={styles.trustedTitle}>
+//               Trusted by global teams
+//             </span>
+//           </div>
+//           <div className="col">
+//             <div className={`${styles.brands} d-flex align-items-center justify-content-between`}>
+//               <span className="fs-14 fw-bold">UNICEF</span>
+//               <span lang="fs-14 fw-bold">YUM!</span>
+//               <span className="fs-14 fw-bold">EF</span>
+//               <span className="fs-14 fw-bold">deel.</span>
+//               <span className="fs-14 fw-bold">YMCA</span>
+//               <span className="fs-14 fw-bold">SOTHEBY'S</span>
+
+//             </div>
+//           </div>
+//         </div>
+//       </section>
+//     </div>
+//   );
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"use client";
+import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import styles from "./page.module.css";
 import Link from "next/link";
 
 export default function Home() {
-  const Services = [
+  const services = [
+    { id: "1", title: "01 / OFFICIAL", name: "Certified translation", desc: "Official translations for immigration, education, legal, government and other high-stakes submissions.", dark: true, svcIcon: "hdsa", circleColor: "#5B61FF", circleBorder: "#454BDB" },
     {
-      "id": "1",
-      "title": "01 / OFFICIAL",
-      "name": "Certified translation",
-      "desc": "Official translations for immigration, education, legal, government and other high-stakes submissions.",
-      "icon": "h"
+      id: "2", title: "02 / EVERYDAY", name: "Document translation", desc: "Professional translation for contracts, reports, certificates, presentations, websites and business documents.", dark: false, circleColor: "#B7FF32",
+      circleBorder: "#9DDE20",
     },
     {
-      "id": "  2",
-      "title": "02 / EVERYDAY",
-      "name": "Document translation",
-      "desc": "Professional translation for contracts, reports, certificates, presentations, websites and business documents.",
-      "icon": "h"
+      id: "3", title: "03 / GLOBAL", name: "Localization", desc: "Adapt language, tone and cultural details so your product and content feel native in every market.", dark: false, circleColor: "#FF9866",
+      circleBorder: "#E57D4D",
     },
     {
-      "id": "3",
-      "title": "03 / GLOBAL",
-      "name": "Localization",
-      "desc": "Adapt language, tone and cultural details so your product and content feel native in every market.",
-      "icon": "h"
+      id: "4", title: "04 / SCALE", name: "Business solutions", desc: "Team accounts, centralized billing, recurring workflows and tailored language programs for organizations.", dark: false, circleColor: "#A982FF",
+      circleBorder: "#8E63E8",
     },
-    {
-      "id": "4",
-      "title": "04 / SCALE",
-      "name": "Business solutions",
-      "desc": "Team accounts, centralized billing, recurring workflows and tailored language programs for organizations.",
-      "icon": "h"
-    },
-  ]
+  ];
+
+  const useCases = [
+    { id: "1", tag: "Individuals", title: "Important documents, handled with care.", desc: "Birth certificates, academic records, passports, applications and personal documents.", tint: styles.caseTint1, bgColor: styles.translationBg1, circleColor: "#5B61FF", },
+    { id: "2", tag: "Legal & finance", title: "Precision where every word matters.", desc: "Contracts, compliance documents, financial reports and regulated communications.", tint: styles.caseTint2, bgColor: styles.translationBg1, circleColor: "#5B61FF", },
+    { id: "3", tag: "Marketing", title: "Keep your brand's voice, everywhere.", desc: "Campaigns, websites, product copy and creative content adapted for local audiences.", tint: styles.caseTint3, bgColor: styles.translationBg2,circleColor: "#ff9a6b", },
+    { id: "4", tag: "Technology", title: "Launch globally without sounding translated.", desc: "Apps, software, help centers, UI strings and product experiences localized for scale.", tint: styles.caseTint4, bgColor: styles.translationBg3,circleColor: "#caff55", },
+  ];
+
+  const steps = [
+    { id: "1", title: "Upload your document", desc: "Drop in your file or paste your text. We support every major document format." },
+    { id: "2", title: "We match a translator", desc: "Your project is matched to a native-speaking professional with the right subject expertise." },
+    { id: "3", title: "Receive & download", desc: "Get your finished translation, reviewed and ready, within your estimated delivery window." },
+  ];
+
+  const plans = [
+    { id: "1", name: "Standard", desc: "For everyday documents and personal use.", price: "$24.95", unit: "/ document", featured: false, features: ["Native-speaking translators", "24–48 hr delivery", "PDF & DOCX export", "Email support"] },
+    { id: "2", name: "Professional", desc: "For businesses with regular translation needs.", price: "$49.95", unit: "/ document", featured: true, features: ["Everything in Standard", "Certified translation option", "Priority 24 hr delivery", "Dedicated project manager", "Team billing"] },
+    { id: "3", name: "Enterprise", desc: "For organizations scaling across markets.", price: "Custom", unit: "pricing", featured: false, features: ["Everything in Professional", "Localization workflows", "API & integrations", "SLA & compliance support"] },
+  ];
+
+  const languages = ["English", "Spanish", "French", "German", "Japanese", "Arabic", "Hindi", "Portuguese", "Korean", "Italian"];
+
+  const faqs = [
+    { q: "How quickly can you translate my document?", a: "Delivery depends on document length, language pair and service. Many projects have expedited options, and the estimated delivery is shown during the quote process." },
+    { q: "Are translations completed by humans?", a: "Professional translators handle the work, with quality processes designed to match projects to the right language expertise." },
+    { q: "Do you provide certified translations?", a: "Yes. Certified translation is available for official uses such as immigration, education, legal and government submissions." },
+    { q: "Can you handle business and recurring projects?", a: "Yes. Business workflows can include team access, centralized billing, recurring translation needs and customized language programs." },
+    { q: "What languages do you support?", a: "The platform is designed around 65+ languages, including major global business languages and many regional language pairs." },
+  ];
+
+  const [openFaq, setOpenFaq] = useState(0);
+  const [billing, setBilling] = useState("monthly");
+
   return (
-    <div className={styles.page}>
+    <div className="mx-2">
       <Navbar />
 
-      <section className="container-custom  ">
-        <section className={`${styles.hero} row align-items-center`}>
+      <section className="container-custom">
+        <section className={`${styles.hero} row align-items-center ps-2 `}>
           <div className="col-lg-5 col-md-12 col-sm-12 col-12">
-            <span className={`${styles.badge} d-inline-flex align-items-center gap-2`}>
+            <span className={`${styles.badge} d-inline-flex align-items-center gap-2 px-2`}>
               <span className={styles.dot}></span>
               Global language partner · 65+ languages
             </span>
@@ -49,33 +274,22 @@ export default function Home() {
               <br />
               business
               <br />
-              <span className={`${styles.customGradientColor}`}>
-                understood.
-              </span>
+              <span className={styles.customGradientColor}>understood.</span>
             </h1>
 
-            <p className={`fs-22 text-secondary`}>
+            <p className="fs-22 text-secondary">
               Professional translation and localization for companies,
               documents, products and people — combining native-language
               expertise with a beautifully simple digital experience.
             </p>
 
             <div className="d-flex flex-wrap gap-2 mt-4">
-
-              <Link
-                href="#"
-                className={`${styles.darkBtn} btn rounded-pill fw-bold`}
-              >
+              <Link href="#quote" className={`${styles.darkBtn} btn rounded-pill fw-bold`}>
                 Start a translation →
               </Link>
-
-              <Link
-                href="#"
-                className="btn bg-white border rounded-pill fw-bold px-4 py-3"
-              >
+              <Link href="#services" className="btn bg-white border rounded-pill fw-bold px-4 py-3">
                 Explore solutions
               </Link>
-
             </div>
 
             <div className={`${styles.features} d-flex flex-wrap gap-3 mt-3 fs-13`}>
@@ -83,80 +297,49 @@ export default function Home() {
               <span>✓ Transparent pricing</span>
               <span>✓ Fast delivery</span>
             </div>
-
           </div>
 
-          <div className=" col-lg-7 col-md-12 col-sm-12 col-12">
+          <div className="col-lg-7 col-md-12 col-sm-12 col-12">
             <div className={styles.translation}>
               <div className={styles.circle}></div>
               <div className={styles.card}>
-                <h2 className="fs-4 fw-bold mb-4">
-                  Create a translation
-                </h2>
+                <h2 className="fs-4 fw-bold mb-4">Create a translation</h2>
                 <div className="row align-items-center g-3">
                   <div className="col">
                     <div className={styles.language}>
-                      <strong className="me-2">US</strong>
-                      English
+                      <strong className="me-2">US</strong>English
                     </div>
                   </div>
                   <div className="col-auto">
-                    <div className={styles.swap}>
-                      ↔
-                    </div>
+                    <div className={styles.swap}>↔</div>
                   </div>
                   <div className="col">
                     <div className={styles.language}>
-                      <strong className="me-2">DE</strong>
-                      German
+                      <strong className="me-2">DE</strong>German
                     </div>
                   </div>
                 </div>
                 <div className={styles.upload}>
-                  <div className={styles.uploadIcon}>
-                    ↑
-                  </div>
-                  <strong>
-                    Drop your document here
-                  </strong>
-                  <small>
-                    PDF, DOCX, PPTX, XLSX and more · Secure upload
-                  </small>
+                  <div className={styles.uploadIcon}>↑</div>
+                  <strong>Drop your document here</strong>
+                  <small>PDF, DOCX, PPTX, XLSX and more · Secure upload</small>
                 </div>
-
                 <div className="border-top mt-3 pt-3 d-flex justify-content-between">
                   <div>
-                    <small className="d-block text-secondary">
-                      Estimated delivery
-                    </small>
-                    <strong className="fs-4">
-                      24–48 hrs
-                    </strong>
+                    <small className="d-block text-secondary">Estimated delivery</small>
+                    <strong className="fs-4">24–48 hrs</strong>
                   </div>
-
                   <div className="text-end">
-                    <small className="d-block text-secondary">
-                      From
-                    </small>
-                    <strong className="fs-4">
-                      $24.95
-                    </strong>
+                    <small className="d-block text-secondary">From</small>
+                    <strong className="fs-4">$24.95</strong>
                   </div>
                 </div>
               </div>
 
-              <span className={styles.languages}>
-                65+ languages
-              </span>
-              <span className={styles.available}>
-                • Available now
-              </span>
-              <span className={styles.secure}>
-                🔒 Secure workflow
-              </span>
-              <span className={styles.rating}>
-                ★ 4.9 / 5 customer rating
-              </span>
+              <span className={styles.languages}>65+ languages</span>
+              <span className={styles.available}>• Available now</span>
+              <span className={styles.secure}>🔒 Secure workflow</span>
+              <span className={styles.rating}>★ 4.9 / 5 customer rating</span>
             </div>
           </div>
         </section>
@@ -165,27 +348,493 @@ export default function Home() {
       <section className={`${styles.trusted} border-top border-bottom my-lg-5 my-md-4 my-3`}>
         <div className="row align-items-center g-0">
           <div className="col-12 col-md-auto">
-            <span className={styles.trustedTitle}>
-              Trusted by global teams
-            </span>
+            <span className={styles.trustedTitle}>Trusted by global teams</span>
           </div>
           <div className="col">
             <div className={`${styles.brands} d-flex align-items-center justify-content-between`}>
               <span className="fs-14 fw-bold">UNICEF</span>
-              <span lang="fs-14 fw-bold">YUM!</span>
+              <span className="fs-14 fw-bold">YUM!</span>
               <span className="fs-14 fw-bold">EF</span>
               <span className="fs-14 fw-bold">deel.</span>
               <span className="fs-14 fw-bold">YMCA</span>
               <span className="fs-14 fw-bold">SOTHEBY'S</span>
-
             </div>
           </div>
         </div>
       </section>
+
+      <section className={`${styles.section} container-custom`} id="services">
+        <div className="row align-items-end mb-4 pb-3 pt-3">
+          <div className="col-lg-7 col-md-12 col-sm-12 col-12 ">
+            <span className={styles.eyebrow}>Services</span>
+            <h2 className={styles.sectionTitle}>
+              One partner for
+              <br />
+              every language need.
+            </h2>
+          </div>
+          <div className="col-lg-5 col-md-12 col-sm-12 col-12">
+            <p className={`${styles.sectionDesc} ms-lg-auto`}>
+              Whether you're submitting one important document or scaling a
+              multilingual product, Verba gives you the right level of
+              expertise without unnecessary complexity.
+            </p>
+          </div>
+        </div>
+
+        <div className="row g-3">
+          {services.map((s) => (
+            <div className="col-lg-3 col-md-6 col-12" key={s.id}>
+              <div className={`${styles.svc} ${s.dark ? styles.svcDark : ""}`}>
+                <span className={styles.svcNum}>{s.title}</span>
+                <div className={styles.svcIcon}>{s.svcIcon}</div>
+                <h3>{s.name}</h3>
+                <p>{s.desc}</p>
+                <div className={styles.svcBlob}>
+                  <div
+                    className={styles.svcCircle}
+                    style={{
+                      backgroundColor: s.circleColor,
+                      borderColor: s.circleBorder,
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className={styles.ribbon}>
+          <div className={styles.ticker}>
+            <span>
+              {languages.map((l) => (
+                <span key={l}><i></i>{l}</span>
+              ))}
+            </span>
+            <span>
+              {languages.map((l) => (
+                <span key={l + "2"}><i></i>{l}</span>
+              ))}
+            </span>
+          </div>
+        </div>
+      </section>
+
+      {/* ================= SOLUTIONS / USE CASES ================= */}
+
+      <section className={`${styles.section} container-custom`} id="solutions">
+        <div className="row align-items-end mb-4 g-3">
+          <div className="col-lg-7">
+            <span className={styles.eyebrow}>Built around your world</span>
+            <h2 className={styles.sectionTitle}>
+              Translation that
+              <br />
+              understands context.
+            </h2>
+          </div>
+          <div className="col-lg-5">
+            <p className={`${styles.sectionDesc} ms-lg-auto`}>
+              Language is never just words. Our solutions are designed around
+              the audience, purpose and market behind every project.
+            </p>
+          </div>
+        </div>
+
+        <div className="row g-3">
+          {useCases.map((c) => (
+            <div className="col-lg-6 col-md-12 col-sm-12 col-12" key={c.id}>
+              <div className={`${styles.case} ${c.tint}`}>
+                <small>{c.tag}</small>
+                <div className="mt-4">
+                  <sapn className="bg-light p-3 rounded-4 ">icon</sapn>
+                </div>
+                <h3>{c.title}</h3>
+                <p>{c.desc}</p>
+                <div className={`${styles.caseShape} ${c.bgColor}`}>
+                  <div style={{
+                    backgroundColor: c.circleColor,
+                  }} className={styles.caseShapeDifrrent}></div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ================= WORKFLOW / PROCESS ================= */}
+      {/* <section className={`${styles.section} container-custom`} id="process">
+        <div className="mb-4">
+          <span className={styles.eyebrow}>How it works</span>
+          <h2 className={styles.sectionTitle}>Three steps to a finished translation.</h2>
+        </div>
+        <div className="row g-3">
+          {steps.map((s, i) => (
+            <div className="col-lg-4 col-12" key={s.id}>
+              <div className={styles.step}>
+                <div className={styles.stepNo}>{i + 1}</div>
+                <h3>{s.title}</h3>
+                <p>{s.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section> */}
+
+      {/* ================= SECURITY ================= */}
+      {/* <section className="container-custom" id="security">
+        <div className={styles.security}>
+          <div className="row align-items-center g-4">
+            <div className="col-lg-6">
+              <span className={styles.eyebrow} style={{ color: "var(--color-accent-lime)" }}>Security</span>
+              <h2 className={styles.sectionTitle}>Your documents stay protected, end to end.</h2>
+              <p>
+                Every file is handled with enterprise-grade security — from
+                upload to delivery — so sensitive documents remain
+                confidential throughout the translation process.
+              </p>
+              <div className="row g-2 mt-3">
+                <div className="col-6"><div className={styles.check}><b>✓</b>Encrypted uploads</div></div>
+                <div className="col-6"><div className={styles.check}><b>✓</b>Confidential review</div></div>
+                <div className="col-6"><div className={styles.check}><b>✓</b>Access controls</div></div>
+                <div className="col-6"><div className={styles.check}><b>✓</b>Automatic deletion</div></div>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div className={styles.securityVisual}>
+                <div className={styles.secureTop}>
+                  <span>Document status</span>
+                  <span>🔒 Encrypted</span>
+                </div>
+                <div className={styles.shield}>
+                  <div className={styles.shieldMark}>🛡</div>
+                </div>
+                <div className="mt-3">
+                  <div className={styles.sline}></div>
+                  <div className={styles.sline}></div>
+                  <div className={styles.sline}></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */}
+
+      {/* ================= STATS + TESTIMONIAL ================= */}
+      {/* <section className={`${styles.section} container-custom`}>
+        <div className="row g-4 align-items-center">
+          <div className="col-lg-5">
+            <span className={styles.eyebrow}>Why teams choose Verba</span>
+            <h2 className={styles.sectionTitle}>Numbers that speak for themselves.</h2>
+            <div className="row g-2 mt-3">
+              <div className="col-6"><div className={styles.stat}><strong>65+</strong><span>Languages supported</span></div></div>
+              <div className="col-6"><div className={styles.stat}><strong>2M+</strong><span>Documents translated</span></div></div>
+              <div className="col-6"><div className={styles.stat}><strong>24 hr</strong><span>Average delivery</span></div></div>
+              <div className="col-6"><div className={styles.stat}><strong>4.9 / 5</strong><span>Customer rating</span></div></div>
+            </div>
+          </div>
+          <div className="col-lg-7">
+            <div className={styles.testimonial}>
+              <div className={styles.testimonialBlob}></div>
+              <div className={styles.stars}>★★★★★</div>
+              <blockquote>
+                "Verba turned a three-week localization project into a
+                three-day one — without losing any nuance."
+              </blockquote>
+              <div className="d-flex align-items-center gap-2 position-relative">
+                <div className={styles.avatar}></div>
+                <div>
+                  <strong className="d-block fs-14">Maya Chen</strong>
+                  <span className="fs-13 text-secondary">Head of Global Ops, Northwind</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */}
+
+      {/* ================= QUOTE CTA ================= */}
+      {/* <section className="container-custom" id="quote">
+        <div className={styles.quoteBox}>
+          <div className="row align-items-center g-4">
+            <div className="col-lg-6">
+              <h2 className={styles.sectionTitle}>Get a free, no-obligation quote today.</h2>
+              <p>Tell us about your project and we'll match you with the right translator and turnaround, in minutes.</p>
+            </div>
+            <div className="col-lg-6">
+              <div className={styles.quoteForm}>
+                <h3>Request a quote</h3>
+                <input className={styles.formInput} placeholder="Full name" />
+                <input className={styles.formInput} placeholder="Email address" />
+                <div className="row g-2">
+                  <div className="col-6"><input className={styles.formInput} placeholder="From language" /></div>
+                  <div className="col-6"><input className={styles.formInput} placeholder="To language" /></div>
+                </div>
+                <button type="button" className={`${styles.darkBtn} btn rounded-pill fw-bold w-100 mt-2`}>
+                  Get my quote →
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */}
+
+      {/* ================= PRICING ================= */}
+      {/* <section className={`${styles.section} container-custom`} id="pricing">
+        <div className="text-center mb-4">
+          <span className={styles.eyebrow}>Pricing</span>
+          <h2 className={styles.sectionTitle}>Simple, transparent pricing.</h2>
+        </div>
+
+        <div className="d-flex justify-content-center mb-4">
+          <div className={styles.toggle}>
+            <button
+              type="button"
+              className={`${styles.toggleBtn} ${billing === "monthly" ? styles.toggleActive : ""}`}
+              onClick={() => setBilling("monthly")}
+            >
+              Pay per document
+            </button>
+            <button
+              type="button"
+              className={`${styles.toggleBtn} ${billing === "annual" ? styles.toggleActive : ""}`}
+              onClick={() => setBilling("annual")}
+            >
+              Business plan
+            </button>
+          </div>
+        </div>
+
+        <div className="row g-3">
+          {plans.map((p) => (
+            <div className="col-lg-4 col-12" key={p.id}>
+              <div className={`${styles.plan} ${p.featured ? styles.planFeatured : ""}`}>
+                {p.featured && <span className={styles.planBadge}>Most popular</span>}
+                <small>{p.name}</small>
+                <h3>{p.name}</h3>
+                <div className="desc">{p.desc}</div>
+                <div className={styles.planPrice}>
+                  {p.price} <span>{p.unit}</span>
+                </div>
+                <ul>
+                  {p.features.map((f) => (
+                    <li key={f}>{f}</li>
+                  ))}
+                </ul>
+                <button
+                  type="button"
+                  className={`btn rounded-pill fw-bold w-100 mt-2 ${p.featured ? "" : "border"}`}
+                  style={p.featured ? { background: "var(--color-accent-lime)", color: "var(--color-text)" } : { background: "var(--color-white)" }}
+                >
+                  Choose {p.name}
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section> */}
+
+      {/* ================= REVIEWS ================= */}
+      {/* <section className={`${styles.section} container-custom`}>
+        <div className="row g-3">
+          <div className="col-lg-8 col-12">
+            <div className={styles.reviewMain}>
+              <div className={styles.reviewGlow}></div>
+              <span className={styles.eyebrow} style={{ color: "var(--color-accent-lime)" }}>Customer review</span>
+              <div className={styles.reviewQuote}>
+                "The certified translation was accepted on the first try — fast, accurate and exactly formatted the way the embassy needed."
+              </div>
+              <div className={styles.reviewMeta}>
+                <div className={styles.reviewAvatar}></div>
+                <span>Daniel Ruiz · Certified translation client</span>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-12">
+            <div className="row g-3 h-100">
+              <div className="col-12">
+                <div className={styles.score}>
+                  <div className={styles.scoreNum}>4.9</div>
+                  <div style={{ color: "var(--color-primary)", letterSpacing: "4px" }}>★★★★★</div>
+                  <p>Based on 12,000+ verified reviews</p>
+                </div>
+              </div>
+              <div className="col-12">
+                <div className={styles.miniReview}>
+                  <strong>Priya S.</strong>
+                  <span>"Delivery was even faster than the estimate. Highly recommend."</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */}
+
+      {/* ================= LANGUAGES ================= */}
+      {/* <section className={`${styles.section} container-custom`} id="global">
+        <div className="mb-4">
+          <span className={styles.eyebrow}>Global reach</span>
+          <h2 className={styles.sectionTitle}>65+ languages, one workflow.</h2>
+        </div>
+        <div className="row g-2">
+          {languages.map((l) => (
+            <div className="col-lg-2 col-md-3 col-6" key={l}>
+              <div className={styles.langCard}>
+                {l} <span>→</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section> */}
+
+      {/* ================= ENTERPRISE ================= */}
+      {/* <section className={`${styles.section} container-custom`}>
+        <div className="row g-3">
+          <div className="col-lg-6 col-12">
+            <div className={styles.enterpriseCard}>
+              <span className={styles.eyebrow}>For teams</span>
+              <h3>Centralized billing and team access.</h3>
+              <p>Give your whole team a single place to request, track and approve translations, with one consolidated invoice.</p>
+              <div className="d-flex flex-wrap gap-2 mt-3">
+                <span className={styles.chip}>Team accounts</span>
+                <span className={styles.chip}>Single invoice</span>
+                <span className={styles.chip}>Usage reports</span>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-6 col-12">
+            <div className={`${styles.enterpriseCard} ${styles.enterpriseTint}`}>
+              <span className={styles.eyebrow}>For developers</span>
+              <h3>Plug translation into your product.</h3>
+              <p>Integrate certified and everyday translation directly into your workflows with a simple, well-documented API.</p>
+              <div className="d-flex flex-wrap gap-2 mt-3">
+                <span className={styles.chip}>REST API</span>
+                <span className={styles.chip}>Webhooks</span>
+                <span className={styles.chip}>SLA support</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */}
+
+      {/* ================= PEOPLE / TRUST ================= */}
+      {/* <section className={`${styles.section} container-custom`}>
+        <div className="row g-3">
+          <div className="col-lg-7 col-12">
+            <div className={styles.peopleHero}>
+              <div className={styles.peopleCaption}>
+                <h3>Real translators, not just software.</h3>
+                <p>Every project passes through native-speaking professionals who understand context, tone and culture.</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-5 col-12">
+            <div className="d-flex flex-column gap-3 h-100">
+              <div className={styles.personCard} style={{ minHeight: "220px" }}>
+                <div className={styles.personLabel}>
+                  Certified translators
+                  <span>Legal & government documents</span>
+                </div>
+              </div>
+              <div className={styles.personCard} style={{ minHeight: "220px" }}>
+                <div className={styles.personLabel}>
+                  Localization specialists
+                  <span>Product & marketing content</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className={`${styles.finalTrust} row g-3 mt-1 text-center text-lg-start`}>
+          <div className={`${styles.finalTrustItem} col-lg-3 col-6`}>
+            <strong>2M+</strong>
+            <span>Documents delivered</span>
+          </div>
+          <div className={`${styles.finalTrustItem} col-lg-3 col-6`}>
+            <strong>65+</strong>
+            <span>Languages supported</span>
+          </div>
+          <div className={`${styles.finalTrustItem} col-lg-3 col-6`}>
+            <strong>12k+</strong>
+            <span>Verified reviews</span>
+          </div>
+          <div className={`${styles.finalTrustItem} col-lg-3 col-6`}>
+            <strong>99%</strong>
+            <span>On-time delivery</span>
+          </div>
+        </div>
+      </section> */}
+
+      {/* ================= FAQ ================= */}
+      {/* <section className={`${styles.section} container-custom`} id="faq">
+        <div className="text-center mb-4">
+          <span className={styles.eyebrow}>FAQ</span>
+          <h2 className={styles.sectionTitle}>Everything you need to know.</h2>
+        </div>
+        <div className="mx-auto" style={{ maxWidth: "900px" }}>
+          {faqs.map((f, i) => (
+            <div className={styles.faqItem} key={f.q}>
+              <button type="button" className={styles.faqQuestion} onClick={() => setOpenFaq(openFaq === i ? -1 : i)}>
+                {f.q}
+                <span className={styles.faqPlus}>{openFaq === i ? "−" : "+"}</span>
+              </button>
+              {openFaq === i && <div className={styles.faqAnswer}>{f.a}</div>}
+            </div>
+          ))}
+        </div>
+      </section> */}
+
+      {/* ================= FOOTER ================= */}
+      {/* <footer className={styles.footer}>
+        <div className="container-custom">
+          <div className="row g-4">
+            <div className="col-lg-4 col-12">
+              <div className="fw-bold fs-4">
+                verba<span style={{ color: "var(--color-accent-lime)" }}>●</span>
+              </div>
+              <p className={styles.footCopy}>
+                Translation without borders — professional language services
+                for people and organizations moving around the world.
+              </p>
+            </div>
+            <div className="col-lg-2 col-6">
+              <span className={styles.footHeading}>Services</span>
+              <Link className={styles.footLink} href="#services">Certified</Link>
+              <Link className={styles.footLink} href="#services">Documents</Link>
+              <Link className={styles.footLink} href="#services">Localization</Link>
+              <Link className={styles.footLink} href="#services">Business</Link>
+            </div>
+            <div className="col-lg-2 col-6">
+              <span className={styles.footHeading}>Solutions</span>
+              <Link className={styles.footLink} href="#solutions">Individuals</Link>
+              <Link className={styles.footLink} href="#solutions">Legal & finance</Link>
+              <Link className={styles.footLink} href="#solutions">Marketing</Link>
+              <Link className={styles.footLink} href="#solutions">Technology</Link>
+            </div>
+            <div className="col-lg-2 col-6">
+              <span className={styles.footHeading}>Company</span>
+              <Link className={styles.footLink} href="#process">How it works</Link>
+              <Link className={styles.footLink} href="#security">Security</Link>
+              <Link className={styles.footLink} href="#faq">FAQ</Link>
+              <Link className={styles.footLink} href="#">Contact</Link>
+            </div>
+            <div className="col-lg-2 col-6">
+              <span className={styles.footHeading}>Resources</span>
+              <Link className={styles.footLink} href="#">Help center</Link>
+              <Link className={styles.footLink} href="#">Languages</Link>
+              <Link className={styles.footLink} href="#">Pricing</Link>
+              <Link className={styles.footLink} href="#">Privacy</Link>
+            </div>
+          </div>
+          <div className={`${styles.footBottom} d-flex flex-column flex-md-row justify-content-between gap-2`}>
+            <span>© 2026 Verba. Website concept.</span>
+            <span>Professional translation · Localization · Global language solutions</span>
+          </div>
+        </div>
+      </footer> */}
     </div>
   );
 }
-
 
 
 

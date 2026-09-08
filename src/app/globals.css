@@ -86,8 +86,9 @@ body{
 }
 
 .container-custom {
-    width: 94%;
+    width: 90%;
     margin-left: auto;
+    overflow: hidden;
     margin-right: auto;
 }
 .text-black{
