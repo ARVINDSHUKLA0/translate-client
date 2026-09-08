@@ -576,6 +576,7 @@
   font-weight: 800;
   color: var(--color-primary);
   margin-bottom: 10px;
+  margin-top: 50px;
 }
 
 .sectionTitle {
@@ -1017,20 +1018,14 @@ transform: translate(-50%);
 .quoteBox {
   background: var(--color-accent-lime);
   border-radius: 32px;
-  padding: 50px 35px;
+  padding: 40px 35px;
 }
 
-.quoteBox h2 {
-  color: var(--color-text);
-  max-width: 620px;
+.quoteBox h1 {
+  color: black;
+  max-width: 620px; 
 }
 
-.quoteBox p {
-  max-width: 540px;
-  color: #46532f;
-  margin-top: 14px;
-  font-size: 14px;
-}
 
 .quoteForm {
   background: var(--color-white);
@@ -1623,6 +1618,7 @@ transform: translate(-50%);
     border-bottom: 0;
     margin-bottom: 0;
   }
+ 
 }
 
 @media (max-width: 575px) {
@@ -1694,6 +1690,10 @@ transform: translate(-50%);
 }
 
 @media (max-width: 1024px) {
+   .eyebrow{
+    margin-top: 0px;
+    padding-left: 5px;
+  }
   .section {
     padding: 30px 0px;
   }

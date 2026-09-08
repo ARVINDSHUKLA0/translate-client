@@ -229,8 +229,8 @@ export default function Home() {
   const useCases = [
     { id: "1", tag: "Individuals", title: "Important documents, handled with care.", desc: "Birth certificates, academic records, passports, applications and personal documents.", tint: styles.caseTint1, bgColor: styles.translationBg1, circleColor: "#5B61FF", },
     { id: "2", tag: "Legal & finance", title: "Precision where every word matters.", desc: "Contracts, compliance documents, financial reports and regulated communications.", tint: styles.caseTint2, bgColor: styles.translationBg1, circleColor: "#5B61FF", },
-    { id: "3", tag: "Marketing", title: "Keep your brand's voice, everywhere.", desc: "Campaigns, websites, product copy and creative content adapted for local audiences.", tint: styles.caseTint3, bgColor: styles.translationBg2,circleColor: "#ff9a6b", },
-    { id: "4", tag: "Technology", title: "Launch globally without sounding translated.", desc: "Apps, software, help centers, UI strings and product experiences localized for scale.", tint: styles.caseTint4, bgColor: styles.translationBg3,circleColor: "#caff55", },
+    { id: "3", tag: "Marketing", title: "Keep your brand's voice, everywhere.", desc: "Campaigns, websites, product copy and creative content adapted for local audiences.", tint: styles.caseTint3, bgColor: styles.translationBg2, circleColor: "#ff9a6b", },
+    { id: "4", tag: "Technology", title: "Launch globally without sounding translated.", desc: "Apps, software, help centers, UI strings and product experiences localized for scale.", tint: styles.caseTint4, bgColor: styles.translationBg3, circleColor: "#caff55", },
   ];
 
   const steps = [
@@ -419,7 +419,7 @@ export default function Home() {
           </div>
         </div>
       </section>
- 
+
 
       <section className={`${styles.section} container-custom`} id="solutions">
         <div className="row align-items-end mb-4 g-3">
@@ -459,18 +459,18 @@ export default function Home() {
           ))}
         </div>
       </section>
- 
+
       <section className={`${styles.section} container-custom`} id="process">
         <div className="mb-4">
           <span className={styles.eyebrow}>How it works</span>
-       <div className="row">
-           <div className="col-lg-6 col-md-6 col-sm-6 col-12">
-                 <h2 className={styles.sectionTitle}>Simple enough to start in a minute.</h2>
-           </div>
-           <div className="col-lg-6 col-md-6 col-sm-6 col-12">
-                 <p className={`${styles.sectionDesc} ms-lg-auto`}>A streamlined experience from your first upload to the final approved file.</p>
-           </div>
-       </div>
+          <div className="row">
+            <div className="col-lg-6 col-md-6 col-sm-6 col-12">
+              <h2 className={styles.sectionTitle}>Simple enough to start in a minute.</h2>
+            </div>
+            <div className="col-lg-6 col-md-6 col-sm-6 col-12">
+              <p className={`${styles.sectionDesc} ms-lg-auto`}>A streamlined experience from your first upload to the final approved file.</p>
+            </div>
+          </div>
         </div>
         <div className="row g-3">
           {steps.map((s, i) => (
@@ -484,15 +484,15 @@ export default function Home() {
           ))}
         </div>
       </section>
- 
+
       <section className="container-custom" id="security">
         <div className={styles.security}>
           <div className="row align-items-end g-4">
             <div className="col-lg-6 col-md-12 col-sm-12 col-12">
               <span className={styles.eyebrow} style={{ color: "var(--color-accent-lime)" }}>Security & quality</span>
-             <h3 style={{color : "white"}} className={styles.sectionTitle}>Global work deserves a secure home.</h3>
+              <h3 style={{ color: "white" }} className={styles.sectionTitle}>Global work deserves a secure home.</h3>
               <p>
-              From personal certificates to confidential corporate files, your content should be handled with care at every step of the process.
+                From personal certificates to confidential corporate files, your content should be handled with care at every step of the process.
               </p>
               <div className="row g-2 mt-3">
                 <div className="col-6"><div className={styles.check}><b>✓</b>Secure file handling</div></div>
@@ -521,55 +521,58 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ================= STATS + TESTIMONIAL ================= */}
-      {/* <section className={`${styles.section} container-custom`}>
+      <section className={`${styles.section} container-custom`}>
         <div className="row g-4 align-items-center">
-          <div className="col-lg-5">
+          <div className="col-lg-5 col-md-12 col-sm-12 col-12">
             <span className={styles.eyebrow}>Why teams choose Verba</span>
-            <h2 className={styles.sectionTitle}>Numbers that speak for themselves.</h2>
+            <h2 className={styles.sectionTitle}>Human expertise. Digital simplicity.</h2>
+            <p className="text-muted fs-12">We remove the frustrating parts of translation while keeping the part that matters most: people who understand language, culture and context.</p>
             <div className="row g-2 mt-3">
               <div className="col-6"><div className={styles.stat}><strong>65+</strong><span>Languages supported</span></div></div>
-              <div className="col-6"><div className={styles.stat}><strong>2M+</strong><span>Documents translated</span></div></div>
-              <div className="col-6"><div className={styles.stat}><strong>24 hr</strong><span>Average delivery</span></div></div>
-              <div className="col-6"><div className={styles.stat}><strong>4.9 / 5</strong><span>Customer rating</span></div></div>
+              <div className="col-6"><div className={styles.stat}><strong>275K+</strong><span>Documents translated</span></div></div>
+              <div className="col-6"><div className={styles.stat}><strong>24–48h</strong><span>Average delivery</span></div></div>
+              <div className="col-6"><div className={styles.stat}><strong>4.9★</strong><span>Customer rating</span></div></div>
             </div>
           </div>
-          <div className="col-lg-7">
+          <div className="col-lg-7 col-md-12 col-sm-12 col-12">
             <div className={styles.testimonial}>
               <div className={styles.testimonialBlob}></div>
               <div className={styles.stars}>★★★★★</div>
               <blockquote>
-                "Verba turned a three-week localization project into a
-                three-day one — without losing any nuance."
+                “The process was incredibly clear. We uploaded the documents, knew the price and delivery time, and got exactly what we needed
               </blockquote>
               <div className="d-flex align-items-center gap-2 position-relative">
                 <div className={styles.avatar}></div>
                 <div>
-                  <strong className="d-block fs-14">Maya Chen</strong>
-                  <span className="fs-13 text-secondary">Head of Global Ops, Northwind</span>
+                  <strong className="d-block fs-14">Verified customer</strong>
+                  <span className="fs-13 text-secondary">Business document translation</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* ================= QUOTE CTA ================= */}
-      {/* <section className="container-custom" id="quote">
+      <section className="container-custom" id="quote">
         <div className={styles.quoteBox}>
           <div className="row align-items-center g-4">
-            <div className="col-lg-6">
-              <h2 className={styles.sectionTitle}>Get a free, no-obligation quote today.</h2>
-              <p>Tell us about your project and we'll match you with the right translator and turnaround, in minutes.</p>
+            <div className="col-lg-7">
+              <p className="fw-bold fs-10 text-uppercase">Get started</p>
+              <h1 className={styles.sectionTitle}>Your next market <br /> starts with one file.</h1>
+              <p className="fs-14">Upload a document and get a clear quote for professional translation. No complicated sales process..</p>
+              <p className="fs-12">✓ No obligation   ✓ Transparent pricing   ✓ Fast response</p>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-5">
               <div className={styles.quoteForm}>
-                <h3>Request a quote</h3>
-                <input className={styles.formInput} placeholder="Full name" />
-                <input className={styles.formInput} placeholder="Email address" />
+                <h3>Get your estimate</h3>
+          
                 <div className="row g-2">
-                  <div className="col-6"><input className={styles.formInput} placeholder="From language" /></div>
-                  <div className="col-6"><input className={styles.formInput} placeholder="To language" /></div>
+                  <div className="col-lg-6 col-md-6 col-sm-6 col-12">  <input className={styles.formInput} placeholder="Full name" /> </div>
+                  <div className="col-lg-6 col-md-6 col-sm-6 col-12">  <input className={styles.formInput} placeholder="Email address" /></div>
+                
+                  <input className={styles.formInput} placeholder="From language" />
+                  <input className={styles.formInput} placeholder="To language" />
                 </div>
                 <button type="button" className={`${styles.darkBtn} btn rounded-pill fw-bold w-100 mt-2`}>
                   Get my quote →
@@ -578,7 +581,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* ================= PRICING ================= */}
       {/* <section className={`${styles.section} container-custom`} id="pricing">
