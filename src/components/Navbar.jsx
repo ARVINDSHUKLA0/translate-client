@@ -53,12 +53,6 @@ const Navbar = () => {
 
                         <li>
                             <Link href="#" className="navbar-menu-link">
-                                Global
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link href="#" className="navbar-menu-link">
                                 FAQ
                             </Link>
                         </li>
@@ -71,13 +65,6 @@ const Navbar = () => {
                             className="btn rounded-pill navbar-signin"
                         >
                             Sign in
-                        </Link>
-
-                        <Link
-                            href="/quote"
-                            className="btn rounded-pill navbar-quote"
-                        >
-                            Get a quote ↗
                         </Link>
                     </div>
 
@@ -156,12 +143,6 @@ const Navbar = () => {
 
                     <li>
                         <Link href="#" onClick={closeMenu}>
-                            Global
-                        </Link>
-                    </li>
-
-                    <li>
-                        <Link href="#" onClick={closeMenu}>
                             FAQ
                         </Link>
                     </li>
@@ -176,13 +157,6 @@ const Navbar = () => {
                         Sign in
                     </Link>
 
-                    <Link
-                        href="/quote"
-                        onClick={closeMenu}
-                        className="btn rounded-pill navbar-quote"
-                    >
-                        Get a quote ↗
-                    </Link>
                 </div>
 
             </div>
