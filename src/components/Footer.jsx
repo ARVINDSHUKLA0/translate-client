@@ -23,7 +23,7 @@ const footerLinks = [
 
 const Footer = () => {
   return (
-    <footer className="footer-section py-5 px-2">
+    <footer className="footer-section py-5 ps-lg-0 ps-md-0 ps-3">
       <div className='container-custom'>
         <div className="row"> 
           <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
