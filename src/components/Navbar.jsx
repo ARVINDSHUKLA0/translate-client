@@ -12,7 +12,8 @@ const Navbar = () => {
     }
 
     return (
-        <nav className="navbar-bg-custom">
+        <> 
+        <nav className="navbar-bg-custom ">
             <div className="navbar-main"> 
                 <div className="navbar-inner container-fluid"> 
                     <Link
@@ -66,7 +67,7 @@ const Navbar = () => {
                     {/* Desktop Buttons */}
                     <div className="navbar-desktop-actions gap-2 gap-xl-3">
                         <Link
-                            href="/signin"
+                            href="/signup"
                             className="btn rounded-pill navbar-signin"
                         >
                             Sign in
@@ -168,7 +169,7 @@ const Navbar = () => {
  
                 <div className="navbar-mobile-actions">
                     <Link
-                        href="/signin"
+                        href="/signup"
                         onClick={closeMenu}
                         className="btn rounded-pill navbar-signin"
                     >
@@ -187,6 +188,8 @@ const Navbar = () => {
             </div>
 
         </nav>
+        <div className="navbar-spacer"></div>
+        </>
     )
 }
 
