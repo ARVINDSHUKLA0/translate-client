@@ -48,7 +48,9 @@
 .text-decoration-none{
   text-decoration: none;
 }
-
+ .customfontplaceHolder::placeholder{
+  font-size: 14px !important;
+ }
 
 body{
   background-color: #f6f7f3e3;

@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import "./signup.css";
+import Link from "next/link";
 
 export default function SignupPage() {
     const [selected, setSelected] = useState("client"); // "client" | "translator"
@@ -16,34 +17,38 @@ export default function SignupPage() {
                         <p className="text-secondary mb-4 fs-13">First, tell us why you're here.</p>
 
                         <div className="row g-3">
+
                             <div className="col-6">
-                                <div
-                                    role="button"
-                                    onClick={() => setSelected("client")}
-                                    className={`rounded-3 text-center h-100 optionCard ${selected === "client" ? "optionCardSelected" : ""
-                                        }`}
-                                >
-                                    <div className="mb-lg-3 mb-2">
-                                        <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
-                                            <path
-                                                d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z"
-                                                fill="#e3d9f7"
-                                            />
-                                            <path d="M15 2v5h5" fill="#d3c5ee" />
-                                            <line x1="7.5" y1="12" x2="16.5" y2="12" stroke="#8a7bb0" strokeWidth="1" />
-                                            <line x1="7.5" y1="15" x2="16.5" y2="15" stroke="#8a7bb0" strokeWidth="1" />
-                                            <line x1="7.5" y1="18" x2="13" y2="18" stroke="#8a7bb0" strokeWidth="1" />
-                                        </svg>
+                                <Link className="text-decoration-none" href="/client-signup">
+                                    <div
+                                        role="button"
+                                        onClick={() => setSelected("client")}
+                                        className={`rounded-3 text-center h-100 optionCard ${selected === "client" ? "optionCardSelected" : ""
+                                            }`}
+                                    >
+                                        <div className="mb-lg-3 mb-2">
+                                            <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                                                <path
+                                                    d="M6 2h9l5 5v15a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z"
+                                                    fill="#e3d9f7"
+                                                />
+                                                <path d="M15 2v5h5" fill="#d3c5ee" />
+                                                <line x1="7.5" y1="12" x2="16.5" y2="12" stroke="#8a7bb0" strokeWidth="1" />
+                                                <line x1="7.5" y1="15" x2="16.5" y2="15" stroke="#8a7bb0" strokeWidth="1" />
+                                                <line x1="7.5" y1="18" x2="13" y2="18" stroke="#8a7bb0" strokeWidth="1" />
+                                            </svg>
+                                        </div>
+                                        <div className="fw-semibold cardTitle fw-bold text-dark">I need a translation</div>
+                                        <div className="text-secondary cardSubtitle">
+                                            Post jobs &amp; hire translators
+                                        </div>
                                     </div>
-                                    <div className="fw-semibold cardTitle fw-bold">I need a translation</div>
-                                    <div className="text-secondary cardSubtitle">
-                                        Post jobs &amp; hire translators
-                                    </div>
-                                </div>
+                                </Link>
                             </div>
 
-                            {/* Option 2: I'm a translator */}
+
                             <div className="col-6">
+                                <Link className="text-decoration-none" href="/translator-signup">
                                 <div
                                     role="button"
                                     onClick={() => setSelected("translator")}
@@ -56,9 +61,10 @@ export default function SignupPage() {
                                             <path d="M12.5 5.5l6 6" stroke="#fff" strokeWidth="1" />
                                         </svg>
                                     </div>
-                                    <div className="fw-semibold cardTitle fw-bold">I'm a translator</div>
+                                    <div className="fw-semibold cardTitle fw-bold text-dark">I'm a translator</div>
                                     <div className="text-secondary cardSubtitle">Find work &amp; get paid</div>
                                 </div>
+                                </Link>
                             </div>
                         </div>
 
@@ -93,6 +99,6 @@ export default function SignupPage() {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 }
