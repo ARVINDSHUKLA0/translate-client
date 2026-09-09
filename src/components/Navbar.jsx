@@ -13,25 +13,18 @@ const Navbar = () => {
 
     return (
         <nav className="navbar-bg-custom">
-
-            {/* Full width navbar background + border */}
-            <div className="navbar-main">
-
-                {/* 94% content area */}
-                <div className="navbar-inner container-fluid">
-
-                    {/* Logo */}
+            <div className="navbar-main"> 
+                <div className="navbar-inner container-fluid"> 
                     <Link
                         href="/"
                         onClick={closeMenu}
                         className="navbar-brand p-0 m-0 text-decoration-none"
                     >
                         <span className="fw-bold navbar-logo">
-                            verba<span className="navbar-dot">●</span>
+                            logo<span className="navbar-dot">●</span>
                         </span>
                     </Link>
-
-                    {/* Desktop Menu */}
+ 
                     <ul className="navbar-menu list-unstyled mb-0">
                         <li>
                             <Link href="#" className="navbar-menu-link">
@@ -99,8 +92,7 @@ const Navbar = () => {
 
                 </div>
             </div>
-
-            {/* Overlay */}
+ 
             {menuOpen && (
                 <div
                     className="navbar-overlay"
@@ -114,8 +106,7 @@ const Navbar = () => {
                     menuOpen ? 'navbar-menu-wrapper-open' : ''
                 }`}
             >
-
-                {/* Mobile Header */}
+ 
                 <div className="navbar-mobile-header">
                     <Link
                         href="/"
@@ -136,8 +127,7 @@ const Navbar = () => {
                         <i className="fa-solid fa-xmark"></i>
                     </button>
                 </div>
-
-                {/* Mobile Links */}
+ 
                 <ul className="navbar-mobile-menu list-unstyled mb-0">
                     <li>
                         <Link href="#" onClick={closeMenu}>
@@ -175,8 +165,7 @@ const Navbar = () => {
                         </Link>
                     </li>
                 </ul>
-
-                {/* Mobile Buttons */}
+ 
                 <div className="navbar-mobile-actions">
                     <Link
                         href="/signin"
