@@ -142,7 +142,7 @@ export default function Page() {
       <main className="faq-page">
         {/* HERO */}
         <section className="faq-hero">
-          <div className="faq-container">
+          <div className="container-custom">
             <div className="faq-reveal faq-visible">
               <div className="faq-eyebrow">FAQ</div>
 
@@ -162,7 +162,7 @@ export default function Page() {
 
         {/* FAQ CONTENT */}
         <section className="faq-section">
-          <div className="faq-container">
+          <div className="container-custom">
             <div className="faq-layout">
               {/* CATEGORIES */}
               <aside className="faq-categories">
@@ -232,7 +232,7 @@ export default function Page() {
 
         {/* CTA */}
         <section className="faq-cta-section" id="start">
-          <div className="faq-container">
+          <div className="container-custom">
             <div className="faq-cta">
               <div>
                 <div className="faq-eyebrow faq-cta-eyebrow">

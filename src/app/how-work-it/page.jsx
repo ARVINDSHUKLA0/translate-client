@@ -1,189 +1,3 @@
-// import React from "react";
-// import "./HowItWork.css";
-// import Navbar from "@/components/Navbar";
-// import Footer from "@/components/Footer";
-
-// const steps = [
-//   ["01", "Tell us what you need", "Choose your source and target languages, service type and delivery speed. Upload your files securely."],
-//   ["02", "Get a clear quote", "See your estimated price and delivery time before you continue."],
-//   ["03", "We match the right expert", "Your content goes to a qualified language professional with the right subject-matter expertise."],
-//   ["04", "Translation begins", "Your translator works carefully with language, context and formatting."],
-//   ["05", "Review your translation", "Receive the finished translation and request revisions if needed."],
-//   ["06", "Download and use", "Approve the final file and download your completed translation."],
-// ];
-
-// const upload = [
-//   ["01 Upload", "Secure file intake"],
-//   ["02 Quote", "Clear price & delivery"],
-//   ["03 Expert", "Matched specialist"],
-//   ["04 Review", "Quality checked"],
-//   ["05 Delivery", "Final approved file"],
-// ];
-
-// const workflow = [
-//   ["CLIENT", "Request"],
-//   ["UPLOAD", "Secure intake"],
-//   ["QUOTE", "Approve"],
-//   ["TRANSLATOR", "Expert work"],
-//   ["DELIVERY", "Final file"],
-// ];
-
-// const security = [
-//   ["Secure file handling", "Files are handled through a confidential workflow."],
-//   ["Professional experts", "Work is matched to qualified language specialists."],
-//   ["Quality review", "Finished translations receive professional review."],
-//   ["Confidential workflow", "Your documents stay focused on the people who need them."],
-// ];
-
-// const Page = () => (
-//   <>
-//     <Navbar />
-
-//     <main className="mx-3"> 
-
-//       <section className="hero">
-//         <div className="container-custom hero-grid">
-//           <div className="reveal">
-//             <div className="eyebrow">HOW IT WORKS</div>
-
-//             <h1 className="display">
-//               Simple enough to
-//               <br />
-//               start in a minute.
-//             </h1>
-
-//             <p className="lead">
-//               A streamlined experience from your first upload to the final
-//               approved file.
-//             </p>
-
-//             <div className="actions">
-//               <a href="#start" className="btn">
-//                 Start a translation →
-//               </a>
-//             </div>
-//           </div>
-
-//           <div className="visual reveal">
-//             <div className="hero-flow">
-//               {upload.map(([title, text]) => (
-//                 <div className="workflow-item" key={title}>
-//                   <strong>{title}</strong>
-//                   <span>{text}</span>
-//                 </div>
-//               ))}
-//             </div>
-//           </div>
-//         </div>
-//       </section> 
-
-//       <section className="section">
-//         <div className="container-custom">
-//           <div className="section-head">
-//             <div>
-//               <div className="eyebrow">FROM UPLOAD TO DELIVERY</div>
-//               <h2 className="section-title">
-//                 A process that keeps
-//                 <br />
-//                 you in the loop.
-//               </h2>
-//             </div>
-//           </div>
-
-//           <div className="timeline">
-//             {steps.map(([no, title, text]) => (
-//               <div className="step" key={no}>
-//                 <div className="step-num">{no}</div>
-
-//                 <div>
-//                   <h3>{title}</h3>
-//                   <p>{text}</p>
-//                 </div>
-//               </div>
-//             ))}
-//           </div>
-//         </div>
-//       </section>
- 
-//       <section className="section">
-//         <div className="container-custom">
-//           <div className="section-head">
-//             <div>
-//               <div className="eyebrow">SHOW THE WORKFLOW</div>
-//               <h2 className="section-title">
-//                 Quietly sophisticated,
-//                 <br />
-//                 step by step.
-//               </h2>
-//             </div>
-//           </div>
-
-//           <div className="workflow">
-//             {workflow.map(([title, text]) => (
-//               <div className="workflow-item" key={title}>
-//                 <strong>{title}</strong>
-//                 <span>{text}</span>
-//               </div>
-//             ))}
-//           </div>
-//         </div>
-//       </section>
- 
-//       <section className="section">
-//         <div className="container-custom">
-//           <div className="section-head">
-//             <div>
-//               <div className="eyebrow">BUILT FOR PEACE OF MIND</div>
-//               <h2 className="section-title">
-//                 Professional care at
-//                 <br />
-//                 every handoff.
-//               </h2>
-//             </div>
-//           </div>
-
-//           <div className="row g-3">
-//             {security.map(([title, text]) => (
-//               <div className="col-12 col-md-6 col-lg-3" key={title}>
-//                 <div className="card h-100">
-//                   <h3>{title}</h3>
-//                   <p>{text}</p>
-//                 </div>
-//               </div>
-//             ))}
-//           </div>
-//         </div>
-//       </section>
- 
-//       <section className="section" id="start">
-//         <div className="container-custom">
-//           <div className="cta">
-//             <div>
-//               <div className="eyebrow">GET STARTED</div>
-
-//               <h2>
-//                 Ready to translate?
-//                 <br />
-//                 Start with one file.
-//               </h2>
-//             </div>
-
-//             <a href="#" className="btn btn-lime">
-//               Start a translation →
-//             </a>
-//           </div>
-//         </div>
-//       </section>
-//     </main>
-
-//     <Footer />
-//   </>
-// );
-
-// export default Page;
-
-
-
 import React from "react";
 import "./HowItWork.css";
 import Navbar from "@/components/Navbar";
@@ -226,8 +40,7 @@ const Page = () => (
     <Navbar />
 
     <main className="howit-page">
-
-      {/* HERO */}
+ 
       <section className="howit-hero">
         <div className="container-custom howit-hero-grid">
 
@@ -265,8 +78,7 @@ const Page = () => (
 
         </div>
       </section>
-
-      {/* TIMELINE */}
+ 
       <section className="howit-section">
         <div className="container-custom">
 
@@ -303,8 +115,7 @@ const Page = () => (
 
         </div>
       </section>
-
-      {/* WORKFLOW */}
+ 
       <section className="howit-section">
         <div className="container-custom">
 
@@ -333,8 +144,7 @@ const Page = () => (
 
         </div>
       </section>
-
-      {/* SECURITY */}
+ 
       <section className="howit-section">
         <div className="container-custom">
 
@@ -365,8 +175,7 @@ const Page = () => (
 
         </div>
       </section>
-
-      {/* CTA */}
+ 
       <section className="howit-section howit-start-section" id="start">
         <div className="container-custom">
 
