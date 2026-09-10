@@ -52,7 +52,7 @@ const Navbar = () => {
                         </li>
 
                         <li>
-                            <Link href="#" className="navbar-menu-link">
+                            <Link href="/faq" className="navbar-menu-link">
                                 FAQ
                             </Link>
                         </li>
@@ -142,7 +142,7 @@ const Navbar = () => {
                     </li>
 
                     <li>
-                        <Link href="#" onClick={closeMenu}>
+                        <Link href="/faq" onClick={closeMenu}>
                             FAQ
                         </Link>
                     </li>
