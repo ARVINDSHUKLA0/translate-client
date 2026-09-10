@@ -40,7 +40,7 @@ const Navbar = () => {
                         </li>
 
                         <li>
-                            <Link href="#" className="navbar-menu-link">
+                            <Link href="/pricing" className="navbar-menu-link">
                                 Pricing
                             </Link>
                         </li>
@@ -130,7 +130,7 @@ const Navbar = () => {
                     </li>
 
                     <li>
-                        <Link href="#" onClick={closeMenu}>
+                        <Link href="/pricing" onClick={closeMenu}>
                             Pricing
                         </Link>
                     </li>
