@@ -229,7 +229,7 @@ const Page = () => (
 
       {/* HERO */}
       <section className="howit-hero">
-        <div className="howit-container howit-hero-grid">
+        <div className="container-custom howit-hero-grid">
 
           <div className="howit-reveal">
             <div className="howit-eyebrow">HOW IT WORKS</div>
@@ -268,7 +268,7 @@ const Page = () => (
 
       {/* TIMELINE */}
       <section className="howit-section">
-        <div className="howit-container">
+        <div className="container-custom">
 
           <div className="howit-section-head">
             <div>
@@ -306,7 +306,7 @@ const Page = () => (
 
       {/* WORKFLOW */}
       <section className="howit-section">
-        <div className="howit-container">
+        <div className="container-custom">
 
           <div className="howit-section-head">
             <div>
@@ -336,7 +336,7 @@ const Page = () => (
 
       {/* SECURITY */}
       <section className="howit-section">
-        <div className="howit-container">
+        <div className="container-custom">
 
           <div className="howit-section-head">
             <div>
@@ -368,7 +368,7 @@ const Page = () => (
 
       {/* CTA */}
       <section className="howit-section howit-start-section" id="start">
-        <div className="howit-container">
+        <div className="container-custom">
 
           <div className="howit-cta">
 
