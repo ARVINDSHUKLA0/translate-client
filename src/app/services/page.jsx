@@ -81,8 +81,8 @@ const Services = () => {
   return (
     <> 
     <Navbar/>
-      <section className="py-5 py-lg-5 overflow-hidden">
-        <div className="container py-lg-5">
+      <section className="py-3 py-lg-5 overflow-hidden ">
+        <div className="container-custom px-2 py-lg-5">
           <div className="row align-items-center g-5">
 
             <div className="col-12 col-lg-6">
@@ -160,8 +160,8 @@ const Services = () => {
         </div>
       </section>
  
-      <section className="py-5">
-        <div className="container py-lg-5">
+      <section className="py-lg-5 py-md-5 py-sm-3 py-2">
+        <div className="container-custom px-2 py-lg-5">
 
           <div className="mb-5">
             <div className="small fw-bold text-secondary mb-3">
@@ -207,8 +207,8 @@ const Services = () => {
         </div>
       </section>
  
-      <section className="py-5">
-        <div className="container py-lg-5">
+      <section className="py-lg-5 py-md-5 py-sm-3 py-2">
+        <div className="container-custom px-2 py-lg-5">
 
           <div className="mb-5">
             <div className="small fw-bold text-secondary mb-3">
@@ -244,8 +244,8 @@ const Services = () => {
         </div>
       </section>
  
-      <section className="py-5">
-        <div className="container py-lg-5">
+      <section className="py-lg-5 py-md-5 py-sm-3 py-2">
+        <div className="container-custom px-2 py-lg-5">
 
           <div className="mb-5">
             <div className="small fw-bold text-secondary mb-3">
@@ -286,8 +286,8 @@ const Services = () => {
         </div>
       </section> 
 
-      <section className="py-5" id="start">
-        <div className="container py-lg-5">
+      <section className="py-lg-5 py-md-5 py-sm-3 py-2" id="start">
+        <div className="container-custom px-2 py-lg-5">
 
           <div className="bg-dark text-white rounded-4 p-4 p-md-5">
             <div className="row align-items-center g-4">
