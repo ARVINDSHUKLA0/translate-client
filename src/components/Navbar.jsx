@@ -28,7 +28,7 @@ const Navbar = () => {
  
                     <ul className="navbar-menu list-unstyled mb-0">
                         <li>
-                            <Link href="#" className="navbar-menu-link">
+                            <Link href="/services" className="navbar-menu-link">
                                 Services
                             </Link>
                         </li>
@@ -118,7 +118,7 @@ const Navbar = () => {
  
                 <ul className="navbar-mobile-menu list-unstyled mb-0">
                     <li>
-                        <Link href="#" onClick={closeMenu}>
+                        <Link href="/services" onClick={closeMenu}>
                             Services
                         </Link>
                     </li>
